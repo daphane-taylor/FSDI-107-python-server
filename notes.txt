@@ -1,0 +1,41 @@
+1. Install virtualenv
+    MAC -  python3 -m pip install virtualenv
+    WIN -  py -m pip install virtualenv
+    -- using python i want to use the modules, the one that i want to use is the pip, and i want to install the virtualenv
+
+2. use the venv to create a virtual enviornment
+    MAC -  python3 -m venv venv
+    WIN -  py -m venv venv 
+    (this is the module being used) (this is the name of the folder)
+
+3. We need to lauch the virtual enviornment
+    MAC -  source venv/bin/activate
+    WIN -  venv\Scripts\activate
+
+    --if you want to stop using the virtual enviornment click on kill on the top right of the terminal.
+
+4. We need to install flask - this is the server library
+        MAC -  python3 -m pip install flask
+        WIN -  py -m pip install flask
+
+-----------------------------------------------------------
+-- An API is an interface that defines what happens everytime i make a request.
+-- When you add googles map to a webpage; youre using googles API for the information needed to use it.
+
+whats a API? 
+    an interface.
+
+Why do we use API's?
+    to help someone get access to a server we create an interface with a set of rules to follow to be able to access the needed server
+
+
+@app.get("/")
+
+name of server = app
+get request = .get
+page being requested = ("/")
+root/homepage = / inside of the ()
+
+@app.get("/test")
+def test():
+return "Hello from the test page"
