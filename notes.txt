@@ -39,3 +39,9 @@ root/homepage = / inside of the ()
 @app.get("/test")
 def test():
 return "Hello from the test page"
+-------------------------------------------------------------
+
+store data in a database using mongoDB
+
+api rest - a way that we establish a connection between the client server and database in another enviornment.
+so if something happens on the client side then none of the data will be lost since it was stored somewhere else on the internet.
