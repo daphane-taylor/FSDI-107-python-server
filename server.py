@@ -71,7 +71,7 @@ def delete_product(index):
 # create an endpoint that says hello using a variable instead of a string.
 @app.get("/contact")
 def contact():
-    message = {"message":"Hello, from the contact page!"}
+    message = {"message":"Hello there, from the contact page!"}
     return json.dumps(message)
 
 app.run(
